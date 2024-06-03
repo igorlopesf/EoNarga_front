@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function createEssencia(essenciaData) {
-    fetch("https://eonarga-api-fbf8d15a4fd5.herokuapp.com/person", {
+    fetch("https://eo-narga.vercel.app/person", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function getEssencia() {
-    fetch("https://eonarga-api-fbf8d15a4fd5.herokuapp.com/person/random", { method: "GET" })
+    fetch("https://eo-narga.vercel.app/person/random", { method: "GET" })
       .then((response) => response.json())
       .then((data) => {
         hideSpinner();
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function getMix() {
-    fetch("https://eonarga-api-fbf8d15a4fd5.herokuapp.com/person/randomdois", { method: "GET" })
+    fetch("https://eo-narga.vercel.app/person/randomdois", { method: "GET" })
       .then((response) => response.json())
       .then((data) => {
         hideSpinner();
